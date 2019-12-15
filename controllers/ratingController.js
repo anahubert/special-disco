@@ -4,7 +4,7 @@ const User = require('./../models/userModel');
 // Like the user and save the Rating document
 exports.likeUser = async (req, res, next) => {
     try {
-        if (req.user._id === req.params.id) {
+        if (req.user._id == req.params.id) {
             throw new Error('You can not add likes to yourself', 501);
         }
         const newRating = await Rating.create({

@@ -4,6 +4,8 @@ const chaiHttp = require('chai-http');
 const jwt = require('jsonwebtoken');
 const server = require('./../server');
 
+const should = chai.should();
+
 chai.use(chaiHttp);
 
 /*
@@ -19,9 +21,9 @@ describe('GET /api/v1/most-liked', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('Object');
-                res.body.results.should.be.eql(15);
+                res.body.results.should.be.eql(16);
                 res.body.data.users[0].email.should.be.eq('test4@test.com');
-                res.body.data.users[0].likes.should.be.eq(1);
+                res.body.data.users[0].likes.should.be.eq(2);
                 done();
             });
     });
@@ -36,7 +38,7 @@ describe('GET /api/v1/user/5df39ce46849412326d01a41', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('Object');
-                res.body.results.should.be.eql(1);
+                res.body.results.should.be.eql(2);
                 done();
             });
     });
@@ -95,6 +97,37 @@ describe('POST /api/v1/signup', function() {
 // /*
 // Test protected routes
 // */
+
+
+describe('GET /api/v1/me-like-me', function() {
+    it('should login user and respond with user token', function(done) {
+        chai.request(server)
+            .post('/api/v1/login')
+            .send({
+                email: 'aleksandra.hubert32@gmail.com',
+                password: '12345678'
+            })
+            .set('Accept', 'application/json')
+            .end((err, res) => {
+                res.should.have.status(200);
+                res.should.have.cookie('jwt');
+                cookie = res.header['set-cookie'][0];
+                id = res.body.data.user._id;
+                done();
+            });
+    });
+    it('should like itself and respond with error', done => {
+        chai.request(server)
+            .post(`/api/v1/user/${id}/like`)
+            .set('Accept', 'application/json')
+            .set('Cookie', `${cookie}`)
+            .end((err, res) => {
+                res.should.have.status(501);
+                done();
+            });
+    });
+});
+
 describe('GET /api/v1/login-change-logout', function() {
     it('should login user and respond with user token', function(done) {
         chai.request(server)
