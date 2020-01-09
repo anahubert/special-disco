@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "2f2cbfd3-fda2-4e13-b62b-c9153b0a9e54",
-		"name": "Povio",
+		"name": "Special Disco",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -28,18 +28,9 @@
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/signup",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"signup"
-					]
+					"path": ["api", "v1", "signup"]
 				}
 			},
 			"response": []
@@ -77,19 +68,9 @@
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/me/update-password",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"me",
-						"update-password"
-					]
+					"path": ["api", "v1", "me", "update-password"]
 				}
 			},
 			"response": []
@@ -108,18 +89,9 @@
 				],
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/users",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"users"
-					]
+					"path": ["api", "v1", "users"]
 				}
 			},
 			"response": []
@@ -138,19 +110,9 @@
 				],
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/user/5df39ce46849412326d01a41",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"5df39ce46849412326d01a41"
-					]
+					"path": ["api", "v1", "user", "5df39ce46849412326d01a41"]
 				}
 			},
 			"response": []
@@ -169,18 +131,9 @@
 				],
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/most-liked",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"most-liked"
-					]
+					"path": ["api", "v1", "most-liked"]
 				}
 			},
 			"response": []
@@ -199,18 +152,9 @@
 				],
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/me",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"me"
-					]
+					"path": ["api", "v1", "me"]
 				}
 			},
 			"response": []
@@ -238,18 +182,9 @@
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/logout",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"logout"
-					]
+					"path": ["api", "v1", "logout"]
 				}
 			},
 			"response": []
@@ -277,18 +212,9 @@
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/login",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"login"
-					]
+					"path": ["api", "v1", "login"]
 				}
 			},
 			"response": []
@@ -316,18 +242,9 @@
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/login",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"login"
-					]
+					"path": ["api", "v1", "login"]
 				}
 			},
 			"response": []
@@ -355,18 +272,9 @@
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/bla",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"bla"
-					]
+					"path": ["api", "v1", "bla"]
 				}
 			},
 			"response": []
@@ -378,20 +286,9 @@
 				"header": [],
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/user/5df39ce46849412326d01a41/like",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"5df39ce46849412326d01a41",
-						"like"
-					]
+					"path": ["api", "v1", "user", "5df39ce46849412326d01a41", "like"]
 				}
 			},
 			"response": []
@@ -410,20 +307,9 @@
 				],
 				"url": {
 					"raw": "127.0.0.1:3000/api/v1/user/5df39ce46849412326d01a41/unlike",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
+					"host": ["127", "0", "0", "1"],
 					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"5df39ce46849412326d01a41",
-						"unlike"
-					]
+					"path": ["api", "v1", "user", "5df39ce46849412326d01a41", "unlike"]
 				}
 			},
 			"response": []
