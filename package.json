@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start:dev": "./node_modules/nodemon/bin/nodemon.js server.js",
-        "start:prod": "NODE_ENV=production && ./node_modules/nodemon/bin/nodemon.js server.js",
-        "test": "./node_modules/mocha/bin/mocha test/apiTest.js --timeout 10000"
+        "start:dev": "nodemon server.js",
+        "start:prod": "NODE_ENV=production && nodemon server.js",
+        "test": "mocha test/apiTest.js --timeout 10000"
     },
     "author": "Aleksandra Hubert",
     "license": "ISC",
